@@ -6,7 +6,7 @@
   "source": {
     "sourceConfig": {
       "functionConfig": {
-        "plugin": "Slug Manager",
+        "plugin": "SlugManager",
         "function": "connector",
         "dataFormat": "JSON"
       }

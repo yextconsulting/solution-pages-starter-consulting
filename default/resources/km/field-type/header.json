@@ -23,6 +23,17 @@
           }
         },
         {
+          "name": "logoLink",
+          "displayName": "Logo Link",
+          "isRequired": false,
+          "typeId": "string",
+          "type": {
+            "stringType": {
+              "stereotype": "SIMPLE"
+            }
+          }
+        },
+        {
           "name": "links",
           "displayName": "Links",
           "isRequired": false,
