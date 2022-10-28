@@ -16,7 +16,17 @@
   "branches": [
     {
       "name": "main",
-      "isProductionBranch": true
+      "isProductionBranch": true,
+      "envVars": [
+        {
+          "key": "YEXT_PUBLIC_SEARCH_API_KEY",
+          "value": "${{searchAPIKey}}"
+        },
+        {
+          "key": "YEXT_PUBLIC_NEARBY_API_KEY",
+          "value": "${{nearbyAPIKey}}"
+        }
+      ]
     }
   ]
 }
