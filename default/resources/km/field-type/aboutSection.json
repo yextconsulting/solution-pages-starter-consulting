@@ -41,7 +41,7 @@
           "typeId": "string",
           "type": {
             "stringType": {
-              "stereotype": "SIMPLE"
+              "stereotype": "MULTILINE"
             }
           }
         },
