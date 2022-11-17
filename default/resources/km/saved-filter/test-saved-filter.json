@@ -1,0 +1,18 @@
+{
+  "$id": "test-saved-filter",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "Test Saved Filter",
+  "filter": {
+    "entityType": [
+      {
+        "entityTypeId": [
+          "location"
+        ],
+        "type": "IS"
+      }
+    ],
+    "inFolders": [
+      "testEntities"
+    ]
+  }
+}
