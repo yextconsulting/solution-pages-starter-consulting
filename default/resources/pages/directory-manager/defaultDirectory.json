@@ -9,8 +9,7 @@
   },
   "root": {
     "entityType": "ce_root",
-    "slug": "index.html",
-    "entityTemplateId": "directoryRoot"
+    "slug": "index.html"
   },
   "localization": {
     "locales": ["en"]
@@ -19,14 +18,12 @@
     {
       "entityType": "ce_region",
       "field": "address.region",
-      "slug": "/{{address.region}}",
-      "entityTemplateId": "directoryRegion"
+      "slug": "/{{address.region}}"
     },
     {
       "entityType": "ce_city",
       "field": "address.city",
-      "slug": "/{{address.region}}/{{address.city}}",
-      "entityTemplateId": "directoryCity"
+      "slug": "/{{address.region}}/{{address.city}}"
     }
   ]
 }
