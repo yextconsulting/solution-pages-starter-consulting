@@ -1,8 +1,8 @@
 {
   "$id": "updateAllSlugs",
-  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "Update All Slugs",
-  "entityType": "location",
+  "entityTypes": ["location"],
   "source": {
     "sourceConfig": {
       "functionConfig": {
@@ -65,5 +65,9 @@
       "header": "isAlternateProfile",
       "subfieldPath": []
     }
-  ]
+  ],
+  "comprehensiveModeConfig": {
+    "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+    "actionOnMissingEntities": "DELETE"
+  }
 }
