@@ -1,0 +1,7 @@
+{
+	"$id": "HelpHomePage-Slug-Manager",
+	"$schema": "https://schema.yext.com/config/platform/plugin/v1",
+	"globals": {
+		"API_KEY": "097521db2b18478fb54d919b71abc434"
+	}
+}
