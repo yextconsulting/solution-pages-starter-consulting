@@ -1,12 +1,12 @@
 {
-  "$id": "updateAllSlugs",
+  "$id": "updateAllSlugsSL",
   "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "Update All Slugs",
-  "entityTypes": ["location"],
+  "entityTypes": ["ce_serviceLine"],
   "source": {
     "sourceConfig": {
       "functionConfig": {
-        "plugin": "Slug-Manager",
+        "plugin": "Slug-Manager-SL",
         "function": "connector",
         "dataFormat": "JSON"
       }

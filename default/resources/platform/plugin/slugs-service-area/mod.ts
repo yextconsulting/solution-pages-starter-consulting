@@ -4,9 +4,9 @@ declare const API_KEY: string;
 
 export const {webhook, connector} = createSlugManager({
 	apiKey: API_KEY,
-	slugFormat: "[[localeCode]]/[[address.region]]/[[address.city]]/[[address.line1]]",
+	slugFormat: "[[localeCode]]/[[c_serviceArea]]-[[c_stateName]]",
 	slugFormatLocaleOverrides: {
-		"en": "[[address.region]]/[[address.city]]/[[address.line1]]"
+		"en": "[[c_serviceArea]]-[[c_stateName]]"
 	},
-	entityTypes: ["location"],
+	entityTypes: ["ce_serviceArea"],
 });
