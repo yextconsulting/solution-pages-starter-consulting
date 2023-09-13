@@ -1,0 +1,11 @@
+{
+  "$id": "directoryCountry",
+  "$schema": "https://schema.yext.com/config/km/entity-template/v2",
+  "content": {
+    "c_meta": null
+  },
+  "entityTypes": [
+    "ce_country"
+  ],
+  "name": "Directory Country"
+}

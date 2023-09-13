@@ -1,5 +1,5 @@
 {
-  "$id": "defaultDirectory",
+  "$id": "defaultDirectoryRegion",
   "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
   "name": "Directory",
   "baseEntities": {
@@ -16,14 +16,19 @@
   },
   "levels": [
     {
+      "entityType": "ce_country",
+      "field": "address.countryCode",
+      "slug": "/{{address.countryCode}}"
+    },
+    {
       "entityType": "ce_region",
       "field": "address.region",
-      "slug": "/{{address.region}}"
+      "slug": "/{{address.countryCode}}/{{address.region}}"
     },
     {
       "entityType": "ce_city",
       "field": "address.city",
-      "slug": "/{{address.region}}/{{address.city}}"
+      "slug": "/{{address.countryCode}}/{{address.region}}/{{address.city}}"
     }
   ]
 }
