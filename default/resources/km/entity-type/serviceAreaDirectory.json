@@ -1,0 +1,7 @@
+{
+    "$id": "ce_serviceAreaDirectory",
+    "$schema": "https://schema.yext.com/config/km/entity-type/v2",
+    "description": "Service Area Directory",
+    "displayName": "Service Area Flat Directory",
+    "pluralDisplayName": ""
+  }

@@ -1,0 +1,24 @@
+{
+    "$id": "serviceAreaDirectory",
+    "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
+    "name": "Service Area Directory",
+    "baseEntities": {
+      "entityTypes": [
+        "ce_serviceArea"
+      ]
+    },
+    "root": {
+      "entityType": "ce_serviceAreaRoot",
+      "slug": "areas"
+    },
+    "localization": {
+      "locales": ["en"]
+    },
+    "levels": [
+      {
+        "entityType": "ce_serviceAreaDirectory",
+        "field": "c_flatServiceAreaDirectory",
+        "slug": "/index.html"
+      }
+    ]
+  }

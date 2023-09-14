@@ -1,0 +1,7 @@
+{
+    "$id": "ce_serviceLineRoot",
+    "$schema": "https://schema.yext.com/config/km/entity-type/v2",
+    "description": "Directory Root Entity",
+    "displayName": "Service Line Root",
+    "pluralDisplayName": ""
+  }

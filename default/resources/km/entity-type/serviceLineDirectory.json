@@ -1,0 +1,7 @@
+{
+    "$id": "ce_serviceLineDirectory",
+    "$schema": "https://schema.yext.com/config/km/entity-type/v2",
+    "description": "Service Line Directory",
+    "displayName": "Service Line Directory",
+    "pluralDisplayName": ""
+  }

@@ -1,0 +1,24 @@
+{
+    "$id": "serviceLineDirectory",
+    "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
+    "name": "Service Line Directory",
+    "baseEntities": {
+      "entityTypes": [
+        "ce_serviceLine"
+      ]
+    },
+    "root": {
+      "entityType": "ce_serviceLineRoot",
+      "slug": "services"
+    },
+    "localization": {
+      "locales": ["en"]
+    },
+    "levels": [
+      {
+        "entityType": "ce_serviceLineDirectory",
+        "field": "c_serviceLineTypeText",
+        "slug": "/{{c_serviceLineTypeText}}"
+      }
+    ]
+  }
