@@ -3,17 +3,17 @@ import { createSlugManager } from "https://deno.land/x/yextpages@plugins@1.0.0-b
 declare const API_KEY: string;
 
 const countriesWithRegion = [
-	"AF", "AU", "BR", "CA", "CD", "PF", "GM", "GT", "GW", "HN", "IN", "IE", "JP", "KI", "ML", "MX", "NR", "NP", "NI", "MP", "OM", "PW", "SH", "LC", "TV", "UA", "VI", "US", "UZ", "VE", "YE", "GB"
+	"AE", "AU", "BB", "CA", "CH", "DM", "HK", "IE", "IN", "KN", "KY", "LC", "US"
 ]
 
-export const {webhook} = createSlugManager({
+export const {webhook, connector} = createSlugManager({
 	apiKey: API_KEY,
-	slugFormat: "[[localeCode]]/[[countryCode]]/[[address.region]]/[[address.city]]/[[address.line1]]",
+	slugFormat: "[[localeCode]]/[[countryCode]]/[[address.region]]/[[address.city]]/[[address.line1]]/[[entityId]]",
 	slugGeneratorFn: (lang, profile) => {
 		if (profile.address && profile.address.countryCode && countriesWithRegion.indexOf(profile.address.countryCode) !== -1) {
-			return `[[localeCode]]/${profile.address.countryCode.toLowerCase()}/[[address.region]]/[[address.city]]/[[address.line1]]`
+			return `[[localeCode]]/${profile.address.countryCode.toLowerCase()}/[[address.region]]/[[address.city]]/[[address.line1]]/[[entityId]]`
 		} else if (profile.address && profile.address.countryCode){
-			return `[[localeCode]]/${profile.address.countryCode.toLowerCase()}/[[address.city]]/[[address.line1]]`
+			return `[[localeCode]]/${profile.address.countryCode.toLowerCase()}/[[address.city]]/[[address.line1]]/[[entityId]]`
 		}
 	},
 	slugGeneratorFnFields: ['address'],

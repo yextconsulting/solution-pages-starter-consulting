@@ -1,15 +1,19 @@
 {
   "$id": "defaultDirectoryNoRegion",
   "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
-  "name": "Directory",
+  "name": "Directory with no region",
   "baseEntities": {
     "entityTypes": [
       "location"
+    ],
+    "savedFilterIds": [
+      "1341079206"
     ]
   },
   "root": {
     "entityType": "ce_root",
-    "slug": "index.html"
+    "slug": "index.html",
+    "entityTemplateId": "directoryRoot"
   },
   "localization": {
     "locales": ["en"]
@@ -18,12 +22,14 @@
     {
       "entityType": "ce_country",
       "field": "address.countryCode",
-      "slug": "/{{address.countryCode}}"
+      "slug": "/{{address.countryCode}}",
+      "entityTemplateId": "directoryCountry"
     },
     {
       "entityType": "ce_city",
       "field": "address.city",
-      "slug": "/{{address.countryCode}}/{{address.city}}"
+      "slug": "/{{address.countryCode}}/{{address.city}}",
+      "entityTemplateId": "directoryCity"
     }
   ]
 }
