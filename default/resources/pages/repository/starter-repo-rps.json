@@ -1,5 +1,5 @@
 {
-  "$id": "starter-repo",
+  "$id": "starter-repo-rps",
   "$schema": "https://schema.yext.com/config/pages/repository/v1",
   "templateRepo": "github.com/yextconsulting/pages-starter-react-consulting",
   "repoUrl": "${{repoUrl}}"

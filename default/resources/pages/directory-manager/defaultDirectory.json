@@ -1,10 +1,13 @@
 {
-  "$id": "defaultDirectory",
+  "$id": "defaultDirectoryRPS",
   "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
   "name": "Directory",
   "baseEntities": {
     "entityTypes": [
       "location"
+    ],
+    "savedFilterIds": [
+      "720145615"
     ]
   },
   "root": {
