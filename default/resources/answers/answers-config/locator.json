@@ -12,12 +12,6 @@
       "name": "Locations",
       "savedSearchId": "pages_locations",
       "searchableFields": {
-        "builtin.entityType": {
-          "nlpFilter": true
-        },
-        "builtin.hours": {
-          "nlpFilter": true
-        },
         "builtin.location": {
           "staticFilter": true
         },
