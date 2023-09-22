@@ -80,7 +80,8 @@
         "width": 100
       }
     },
-    "name": "Site Entity"
+    "name": "Site Entity",
+    "c_searchPage": ["search-page"]
   },
   "entityType": "ce_site",
   "labels": []
