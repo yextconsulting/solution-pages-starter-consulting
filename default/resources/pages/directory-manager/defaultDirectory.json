@@ -18,12 +18,22 @@
     {
       "entityType": "ce_region",
       "field": "address.region",
-      "slug": "/{{address.region}}"
+      "slug": "{{localeCode}}/{{address.region}}",
+      "localeOverrides": {
+        "en": {
+          "slug": "{{address.region}}"
+        }
+      }
     },
     {
       "entityType": "ce_city",
       "field": "address.city",
-      "slug": "/{{address.region}}/{{address.city}}"
+      "slug": "{{localeCode}}/{{address.region}}/{{address.city}}",
+      "localeOverrides": {
+        "en": {
+          "slug": "{{address.region}}/{{address.city}}"
+        }
+      }
     }
   ]
 }
