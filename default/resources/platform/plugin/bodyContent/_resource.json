@@ -1,0 +1,7 @@
+{
+	"$id": "bodyContent",
+	"$schema": "https://schema.yext.com/config/platform/plugin/v1",
+	"globals": {
+		  "API_KEY": "de5c1ba866e35c77ef02029ae18c537a"
+	  }
+  }
